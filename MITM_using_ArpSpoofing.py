@@ -26,7 +26,7 @@ def display(pkt):
 	print "Arp Spoofing is Running..."+" "+str(x)+" "+"packets of ARP have been sent So far."	
 	print "---------------------------------------------------------------------------------"
 	print ""
-  print "Sniffer is Running..."+" "+str(packets)+" "+"packets From the Target have been collected so far."
+	print "Sniffer is Running..."+" "+str(packets)+" "+"packets From the Target have been collected so far."
 	print "---------------------------------------------------------------------------------"	
 	
 	
