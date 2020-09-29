@@ -29,4 +29,4 @@ python 2.7
 * scapy
 
 ## Authors
-* Gil Matitiyahu
+Gil Matitiyahu
