@@ -21,8 +21,9 @@ Sniffer is Running... 768 packets From the Target have been collected so far.
 -----------------------------------------------------------------------------
 ```
 ## Requirements
-Linux OS
-Python 3.7 
+
+* Linux OS
+* Python 3.7 
 
 ## Authors
 Gil Matitiyahu
