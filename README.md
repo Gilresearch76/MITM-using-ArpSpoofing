@@ -21,12 +21,7 @@ Sniffer is Running... 768 packets From the Target have been collected so far.
 -----------------------------------------------------------------------------
 ```
 ## Requirements
-python 2.7 
-* os 
-* sys
-* time 
-* threading 
-* scapy
+python 3.7 
 
 ## Authors
 Gil Matitiyahu
