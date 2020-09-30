@@ -20,13 +20,13 @@ def display(pkt):
 	packets = packets+1
 	wrpcap(path+" "+".pcap", pkt, append=True)
 	system("clear")
- 	print "The pcap file was created in the path :"+" "+path
-	print ""
-	print "Arp Spoofing is Running..."+" "+str(x)+" "+"packets of ARP have been sent So far."	
-	print "---------------------------------------------------------------------------------"
-	print ""
-	print "Sniffer is Running..."+" "+str(packets)+" "+"packets From the Target have been collected so far."
-	print "---------------------------------------------------------------------------------"
+	print ("The pcap file was created in the path :", path)
+	print ("")
+	print ("Arp Spoofing is Running...", str(x), "packets of ARP have been sent So far.")	
+	print ("---------------------------------------------------------------------------------")
+	print ("")
+	print ("Sniffer is Running...", str(packets), "packets From the Target have been collected so far.")
+	print ("---------------------------------------------------------------------------------")
 	
 def sniffer():
 	pcap = sniff(iface=sys.argv[1],prn = display, filter = "host"+" "+TargetIP,)
