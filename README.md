@@ -1,8 +1,14 @@
 # MITM-using-ArpSpoofing
 Man in the middle attack using Arp Spoofing.
 
+## Requirements
+* Linux OS
+* Python 3.7 
+```
+pip3 install -r requirements.txt 
+```
 
-### Getting Started
+## Getting Started
 ```
 Gil@kali:/root/Desktop$ python MITM.py <interface> <TargetIP> <RouterIP> <pcap file path>
 ```
@@ -20,10 +26,5 @@ Arp Spoofing is Running... 156 packets of ARP have been sent So far.
 Sniffer is Running... 768 packets From the Target have been collected so far.
 -----------------------------------------------------------------------------
 ```
-## Requirements
-
-* Linux OS
-* Python 3.7 
-
 ## Authors
 Gil Matitiyahu
