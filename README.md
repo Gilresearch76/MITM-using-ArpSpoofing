@@ -9,14 +9,15 @@ pip3 install -r requirements.txt
 ```
 
 ## Getting Started
+Syntax:
 ```
 Gil@kali:/root/Desktop$ python MITM.py <interface> <TargetIP> <RouterIP> <pcap file path>
 ```
-for Example:
+For Example:
 ```
 Gil@kali:/root/Desktop$ python MITM.py eth0 192.168.1.52 192.168.1.100 /root/Desktop/Gil
 ```
-output:
+Output:
 ```
 The pcap file was created in the path : /root/Desktop/Gil
 
